@@ -12,7 +12,7 @@
 ## Rather than repeating (re-calculating) the operation/action, we can make use of
 ## the cached result if it hasn't changed. We could modify the type of data structure
 ## returned and the operation (say, calculate the standard deviation) implemented by 
-## the "cacheSolve" function role to accomplish this.
+## the "cacheSolve" function role.
 
 ## This function, makeCacheMatrix, creates a matrix data structure, uses 4 nested
 ## sub-functions and exploits R's lexical scoping features to create a shared
