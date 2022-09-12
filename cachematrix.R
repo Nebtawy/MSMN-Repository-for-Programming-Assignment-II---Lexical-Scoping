@@ -23,6 +23,8 @@
 ## makeCacheMatrix includes two methods to get and set the input matrix (x), and two
 ## methods to get (getmatrix) and set (setmatrix) the cached matrix.
 makeCacheMatrix <- function(x = matrix()) {
+        ## Create a cache matrix as an S3 style object environment, data structure
+        ## and methods
         cache_matrix <- matrix()
         set <- function(y) {
                 x <<- y
