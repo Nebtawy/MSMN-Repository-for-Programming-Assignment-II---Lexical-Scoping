@@ -52,8 +52,8 @@ cacheSolve <- function(x, ...) {
                 return(cache_matrix)
         }
         data <- x$get()
-        ## The inverse of the matrix is calculated here by "solve". Since the "b"
-        ## argument to solve is missing, it returns the inverse of the data matrix.
+        # The inverse of the matrix is calculated here by "solve()". Since the "b"
+        # argument to solve is missing, it returns the inverse of the data matrix.
         cache_matrix <- solve(data)
         x$setmatrix(cache_matrix)
         cache_matrix
